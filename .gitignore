@@ -1,0 +1,15 @@
+# Ignore backend data folder
+backend/data/
+
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+venv/
+
+# Build output
+build/
+dist/
