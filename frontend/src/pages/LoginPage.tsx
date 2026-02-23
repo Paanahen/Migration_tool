@@ -62,7 +62,7 @@ const LoginPage = () => {
           </p>
         </div>
 
-        <p className="text-sm text-muted-foreground">
+        <p className="text-sm  text-foreground">
           © 2026 PA Migrate
         </p>
       </div>
@@ -74,23 +74,23 @@ const LoginPage = () => {
             <div className="h-10 w-10 rounded-lg bg-primary flex items-center justify-center">
               <Database className="h-5 w-5 text-primary-foreground" />
             </div>
-            <span className="text-xl font-semibold">PA Migrate</span>
+            <span className="text-xl font-semibold text-foreground">PA Migrate</span>
           </div>
 
           <div className="space-y-2">
-            <h2 className="text-2xl font-bold">
+            <h2 className="text-2xl font-bold text-foreground">
               {isRegister ? 'Create an account' : 'Welcome back'}
             </h2>
-            <p className="text-muted-foreground">
+            <p className="text-foreground">
               {isRegister ? 'Set up your local account to get started' : 'Sign in to your account'}
             </p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <label className="text-sm font-medium" htmlFor="username">Username</label>
+              <label className="text-sm font-medium text-foreground" htmlFor="username">Username</label>
               <div className="relative">
-                <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4  text-foreground" />
                 <Input
                   id="username"
                   value={username}
@@ -103,7 +103,7 @@ const LoginPage = () => {
             </div>
 
             <div className="space-y-2">
-              <label className="text-sm font-medium" htmlFor="password">Password</label>
+              <label className="text-foreground font-medium text-foreground" htmlFor="password">Password</label>
               <div className="relative">
                 <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                 <Input
@@ -127,7 +127,7 @@ const LoginPage = () => {
 
             {isRegister && (
               <div className="space-y-2">
-                <label className="text-sm font-medium" htmlFor="confirmPassword">Confirm Password</label>
+                <label className="text-foreground font-medium" htmlFor="confirmPassword">Confirm Password</label>
                 <div className="relative">
                   <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                   <Input
